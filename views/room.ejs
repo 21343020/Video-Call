@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    const ROOM_ID = "<%= roomId %>"
+  </script>
+  <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  <script src="/socket.io/socket.io.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="header"><h1>Ruang Obrolan Video</h1></div>
+  <div id="video-grid" ></div>
+  <div id="chat-container">
+    <div id="chat-messages"></div>
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="Tulis Pesanmu Disini...">
+      <button type="kirim">Send</button>
+    </form>
+  </div>
+  <div class="tombol">
+    <button id="start-stop-video-button">Start/Stop Video</button>
+    <button id="start-stop-audio-button">Start/Stop Audio</button>
+  </div>
+</body>
+</html>

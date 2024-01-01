@@ -1,0 +1,71 @@
+#video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 460px);
+    grid-auto-rows: 300px;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .tombol {
+    text-align: center;
+    margin-top: 197px;
+  }
+
+  button {
+    display: inline-block;
+    padding: 15px 30px; /* Sesuaikan ukuran padding sesuai keinginan Anda */
+    font-size: 18px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #d67310; /* Warna latar belakang tombol */
+    color: #ffffff; /* Warna teks tombol */
+    border: none;
+    border-radius: 5px; /* Bentuk sudut tombol */
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #cd3719;
+  }
+
+  #chat-container {
+    flex-wrap: wrap;
+    width: 300px;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+
+  #chat-form {
+    display: flex;
+  }
+
+  #chat-input {
+    flex: 1;
+    padding: 5px;
+  }
+
+  #chat-form button {
+    padding: 5px;
+  }
